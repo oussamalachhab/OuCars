@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Categories</title>
+  <link rel="stylesheet" type="text/css" href="categories.css">
+</head>
+<body>
+  <header>
+    <h2 class="logo">OuCars.</h2>
+    <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="categories.html">Catégories</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="panier.html"><i class="fa fa-shopping-cart"></i></a>
+    </nav>
+    <div class="po" id="login-btn">
+        <a href="#" style="--clr:#5474e7"><span>Login</span><i></i></a>
+    </div>
+    
+  </header>
+  <section>
+    <h1 id="categoryTitle">Car Categories</h1>
+    <div id="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="button" onclick="searchCars()">Search</button>
+    </div>
+    <div id="categories">
+      <div class="category" onclick="showCars('sedan')">Sedan</div>
+      <div class="category" onclick="showCars('suv')">SUV</div>
+      <div class="category" onclick="showCars('hatchback')">Hatchback</div>
+      <div class="category" onclick="showCars('Crossover')">Crossover</div>
+      <div class="category" onclick="showCars('Coupe')">Coupe</div>
+      <div class="category" onclick="showCars('Convertible')">Convertible</div>
+      <div class="category" onclick="showCars('Wagon')">Wagon</div>
+      <div class="category" onclick="showCars('PickupTruck')">PickupTruck</div>
+      <div class="category" onclick="showCars('Sports')">Sports</div>
+      <div class="category" onclick="showCars('Electric')">Electric</div>
+      <div class="category" onclick="showCars('Hybrid')">Hybrid</div>
+      <div class="category" onclick="showCars('Luxury')">Luxury</div>
+      <div class="category" onclick="showCars('Microcar')">Microcar</div>
+      <div class="category" onclick="showCars('OffRoad')">OffRoad</div>
+    </div>
+    <a id="carList" href="shop.html"></a>
+  </section>
+
+  <script src="categories.js"></script>
+</body>
+</html>
